@@ -1,1 +1,1 @@
-Software Practice in Haskell for Random Walk
+Software Practice in Haskell for Random Walk.
