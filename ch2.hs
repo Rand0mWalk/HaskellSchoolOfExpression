@@ -10,6 +10,6 @@ type Vertex = (Float, Float)
 
 --defining rectangle and rtTriangle in terms of vertex
 
-Rectangle x y = Polygon[(0,0), (x,0), (x,y), (0,y)]  --[(0,0), (s1,0), (s1,s2), (0,s2)]
+Rectangle x y = Polygon [(0,0), (x,0), (x,y), (0,y)]  --[(0,0), (s1,0), (s1,s2), (0,s2)]
 
-rtTriangle x y = Polygon[(0,0), (x,0), (0,y)]
+rtTriangle x y = Polygon [(0,0), (x,0), (0,y)]
