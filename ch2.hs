@@ -12,3 +12,4 @@ type Vertex = (Float, Float)
 
 Rectangle x y = Polygon[(0,0), (x,0), (x,y), (0,y)]  --[(0,0), (s1,0), (s1,s2), (0,s2)]
 
+rtTriangle x y = Polygon[(0,0), (x,0), (0,y)]
