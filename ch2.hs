@@ -29,7 +29,7 @@ regularPolygon n s = Polygon (map get_v [1..n])
                           r = (s/2)/ (sin half_a)
                           get_v i = (r*cos(new_angle i),r*sin(new_angle i))
 
-{-2.3
+{- 2.3
 area (Rectangle s1 s2) = area (Polygon [(0,0),(s1,0),(s1,s2),(0,s2)])
 
 Heron's formula :
@@ -59,6 +59,9 @@ RHS = triArea (0,0) (s1,0) (s1,s2) + areaPolygon (0,0):(s1,s2):(0,s2)
     
     Combining 1/2*s1*s2 + 1/2*s1*s2 = s1*s2 = area (Rectangle s1 s2)
 
-    As we set out to do. Hence proved. QED
+    As we set out to do. Hence proved. QED -}
 
--)
+
+convex :: Shape -> Bool
+
+convex (Rectangle _ _) = True
