@@ -65,3 +65,6 @@ RHS = triArea (0,0) (s1,0) (s1,s2) + areaPolygon (0,0):(s1,s2):(0,s2)
 convex :: Shape -> Bool
 
 convex (Rectangle _ _) = True
+convex (Ellipse _ _) = True
+convex (RtTriangle _ _) = True
+
